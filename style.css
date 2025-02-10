@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e4e4e4;
+  /* height: 3000px; */
+}
+.navbar .navbarnav a {
+  color: #7e8ef1;
+  font-weight: 400;
+}
+.navbar .navbarnav a:hover {
+  color: #615efc;
+}
+
+.navbar {
+  /* background-color: #d1d1d1; */
+  /* border-bottom: 1px solid red; */
+  padding: 1rem 0;
+  background-color: #e4e4e4;
+  box-shadow: 2px 0 50px 0.5px rgb(175, 175, 175);
+  border-bottom: 1px solid #7e8ef1;
+}
+
+.navbar span {
+  color: white;
+}
+
+.navbar .container .logo {
+  font-size: 1.2rem;
+  color: #7e8ef1;
+}
+
+.navbar .container .navbarnav .navbar-nav a {
+  margin-left: 2rem;
+}
+/*  */
+
+/* Uiverse */
+.cardhome {
+  width: 250px;
+  height: 350px;
+  background: #e4e4e4;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.cardhome img {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+  height: 340px;
+  width: 240px;
+  border-radius:20px ;
+}
+
+.cardhome::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cardhome::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  /* inset: 5px; */
+  border-radius: 15px;
+}  
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+/* Uiverse */
+
+/*  */
+.jumbotron {
+  /* height: 37rem; */
+  /* position: relative; */
+}
+
+
+.jumbotron p {
+  display: inline-block;
+  width: 31.25rem;
+  font-size: 1.2em;
+}
+.jumbotron h1 {
+  font-weight: 500;
+}
+
+.jumbotron .row {
+  margin-top: 8rem;
+}
+
+.jumbotron .row .nama {
+  color: #7e8ef1;
+}
+
+/* Icon */
+ul {
+  list-style: none;
+  /* position: relative; */
+  /* position: absolute; */
+  margin-top: 20px;
+  bottom: 50px;
+}
+
+.example-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.example-2 .icon-content {
+  margin: 0 7px;
+  position: relative;
+}
+.example-2 .icon-content .tooltip {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  visibility: hidden;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+.example-2 .icon-content:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  top: -50px;
+}
+.example-2 .icon-content a {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #4d4d4d;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover {
+  box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+.example-2 .icon-content a svg {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+.example-2 .icon-content a:hover {
+  color: white;
+}
+.example-2 .icon-content a .filled {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000;
+  transition: all 0.3s ease-in-out;
+}
+.example-2 .icon-content a:hover .filled {
+  height: 100%;
+}
+
+.example-2 .icon-content a[data-social="linkedin"] .filled,
+.example-2 .icon-content a[data-social="linkedin"] ~ .tooltip {
+  background-color: #0274b3;
+}
+
+.example-2 .icon-content a[data-social="github"] .filled,
+.example-2 .icon-content a[data-social="github"] ~ .tooltip {
+  background-color: #24262a;
+}
+.example-2 .icon-content a[data-social="instagram"] .filled,
+.example-2 .icon-content a[data-social="instagram"] ~ .tooltip {
+  background: linear-gradient(
+    45deg,
+    #405de6,
+    #5b51db,
+    #b33ab4,
+    #c135b4,
+    #e1306c,
+    #fd1f1f
+  );
+}
+.example-2 .icon-content a[data-social="youtube"] .filled,
+.example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
+  background-color: #ff0000;
+}
+
+/* Icon */
+.about {
+  height: 37rem;
+  color: #615efc;
+  /* background-color:red; */
+  margin-top: 5rem;
+}
+
+.about .row .gambar1 img {
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px gray;
+}
+
+/* .portofolio {
+  height: 45rem;
+  
+} */
+ /* uiverse */
+ /* Uiverse */
+
+.portofolio .roww img{
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  
+  
+}
+.portofolio .row img:hover{
+  transition: 0.4s;
+  filter: contrast(60%);
+  cursor: pointer;
+}
+
+.portofolio .roww{
+  gap: 3em;
+  
+  
+}
+
+.contact{}
+.contact .button .btn{
+  background-color: #615efc;
+  color: white;
+  
+}
+/* From Uiverse.io by samuelfcosta18 */ 
+section.card {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  background-color: #474dc3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card img {
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 3px;
+  width: 100%;
+  
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px #000000;
+  background-color: #474dc3;
+  color: #ffffff;
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #474dc3;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+
+.card__title {
+  margin: 0;
+  padding-left: 5px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.card:hover svg {
+  scale: 0;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.4;
+}
+/* Commands to change the shadows in dark mode
+@media (prefers-color-scheme: dark) {
+  .card:hover {
+  box-shadow: 0 8px 16px #000000;
+  }
+}*/
+
+.footer{
+  background-color: #615efc;
+  /* height: 4rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.footer .nama-footer{
+  color: #e4e4e4;
+  /* text-align: center; */
+  max-height: 0;
+  
+  
+}
+
+/* .contact{
+  height: 37rem;
+  margin-top: 12rem;
+} */
+
+/* button */
+/* From Uiverse.io by barisdogansutcu */ 
+button {
+  padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+
+button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+}
+
+button:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+
+/* ponsive */ 
+/* tablet */
+@media(min-width:758px) and (max-width:991px){
+  .about .paragraf p{
+    color: #474dc3;
+    margin-top: 2rem;
+    
+  }
+  .portofolio{
+    margin-top: 5rem;
+  }
+}
+/* iphone xr */
+@media(max-width:414px){
+
+.jumbotron .cardhome{
+  top: -20px;
+}
+
+
+  .about .paragraf p{
+    color: #474dc3;
+    margin-top:2rem;
+    /* margin-bottom: 5rem; */
+  }
+  .about img{
+    width: 250px;
+    height: 250px;
+  }
+  .portofolio{
+    /* top: 0; */
+  }
+  .cardhome{
+    margin-bottom: 1rem;
+  }
+  .jumbotron p{
+    font-size: 15px;
+  }
+
+}
+/* iphone 14 pro */
+@media(max-width:430px){
+  .about .paragraf p{
+    color: #474dc3;
+    margin-top:2rem;
+  }
+  .portofolio{
+    margin-top: 12rem;
+  }
+}
+
+/* @media (max-width: 1199px) {
+  .navbar a {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 991px) {
+  .navbar a {
+    font-size: 0.8rem;
+  }
+} */
+/* @media (max-width: 1366px) {
+  .navbar a {
+    font-size: 90%;
+  }
+
+  @media (max-width: 758px) {
+    .navbar a {
+      font-size: 60%;
+    }
+  }
+  @media (max-width: 450px) {
+    .navbar a {
+      font-size: 55%;
+    }
+  
+  }
+} */
+/* @media (max-width: 1200px) {
+  .navbar a {
+    font-size: 2rem;
+  }
+} */
